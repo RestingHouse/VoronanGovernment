@@ -93,10 +93,11 @@
 
 /* New Gov Crest Logo styling */
     .gov-crest-icon {
-      height: 56px; /* Keeps the header slim and consistent */
-      width: auto;   /* Scales the logo's width proportionally */
-      flex-shrink: 0;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+      height: 48px;        /* Slightly reduced height to fit perfectly in the bar */
+      width: auto;         /* Keeps the aspect ratio proportional */
+      flex-shrink: 0;      /* Prevents the image from squishing */
+      object-fit: contain; /* Ensures the whole image renders without clipping */
+      display: block;
     }
 
     .logo-text { line-height: 1.1; }
