@@ -91,10 +91,12 @@
     .logo-group:hover { color: var(--gold-light); }
     .logo-group:visited { color: var(--white); }
 
-    /* Hummingbird SVG icon */
-    .hummingbird-icon {
-      width: 52px; height: 52px; flex-shrink: 0;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+/* New Gov Crest Logo styling */
+    .gov-crest-icon {
+      height: 56px; /* Keeps the header slim and consistent */
+      width: auto;   /* Scales the logo's width proportionally */
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
     }
 
     .logo-text { line-height: 1.1; }
@@ -509,41 +511,7 @@
 <header class="site-header" role="banner">
   <div class="header-inner">
     <a class="logo-group" href="/" aria-label="GOV.VR – Home">
-      <!-- Hummingbird SVG -->
-      <svg class="hummingbird-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- Body -->
-        <ellipse cx="38" cy="44" rx="14" ry="9" fill="#D4A017" transform="rotate(-20 38 44)"/>
-        <!-- Chest/belly -->
-        <ellipse cx="34" cy="46" rx="8" ry="6" fill="#F0C04A" transform="rotate(-20 34 46)"/>
-        <!-- Head -->
-        <circle cx="52" cy="34" r="9" fill="#D4A017"/>
-        <!-- Eye -->
-        <circle cx="55" cy="32" r="2" fill="#004E6A"/>
-        <circle cx="55.7" cy="31.3" r="0.7" fill="white"/>
-        <!-- Beak -->
-        <path d="M60 31 L74 28 L60 33 Z" fill="#C8EAF3"/>
-        <!-- Tail -->
-        <path d="M24 47 L10 60 L20 48 L10 54 L22 50 Z" fill="#0090B2"/>
-        <!-- Wing (upper) -->
-        <ellipse cx="38" cy="36" rx="18" ry="6" fill="rgba(255,255,255,0.5)" transform="rotate(-35 38 36)"/>
-        <!-- Wing detail lines -->
-        <path d="M28 30 Q38 24 50 28" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" fill="none"/>
-        <path d="M30 33 Q40 27 50 31" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
-        <!-- Feet/hover blur dots -->
-        <circle cx="34" cy="55" r="2" fill="rgba(212,160,23,0.5)"/>
-        <circle cx="30" cy="57" r="1.5" fill="rgba(212,160,23,0.4)"/>
-        <circle cx="38" cy="56" r="1.5" fill="rgba(212,160,23,0.4)"/>
-        <!-- Throat patch -->
-        <ellipse cx="50" cy="38" rx="5" ry="3.5" fill="#B52A35" transform="rotate(-20 50 38)"/>
-        <!-- Motion lines for hovering -->
-        <line x1="14" y1="34" x2="8" y2="33" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="15" y1="37" x2="8" y2="37" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-linecap="round"/>
-        <line x1="14" y1="40" x2="8" y2="41" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      <div class="logo-text">
-        <span class="domain">GOV.VR</span>
-        <span class="org">The Voronan Federation</span>
-      </div>
+      <img src="GOV.VR.svg" class="gov-crest-icon" alt="GOV.VR - The Voronan Federation" />
     </a>
 
     <nav class="header-nav" aria-label="Primary navigation">
